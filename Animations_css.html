@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+
+        *{
+
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+       
+
+        .container{
+
+            width:100vw;
+            height: 100vh;
+            background-color: bisque;
+            border: 5px solid black;
+        }
+
+        .box{
+
+            width:350px;
+            height: 80px;
+            background-color: blue;
+            border-radius: 10px;
+            margin: 10px;
+            position: relative;
+            border: 5px solid red;
+            animation-name: rightmovement;
+            animation-duration:5s;
+            animation-iteration-count: 100;
+            animation-delay:2s;
+            animation-timing-function: linear;
+            animation-direction: reverse;
+            animation-fill-mode: both;
+            animation-play-state:running
+               }
+        @keyframes rightmovement{
+            from{
+                top: 0;
+                left:0;
+            }
+            to{
+                top:0;
+                left: 1200px;
+            }
+        }
+
+        .box2{
+            width:350px;
+            height: 80px;
+            background-color: blue;
+            border-radius: 10px;
+            margin: 10px;
+            position: relative;
+            border: 5px solid red;
+            animation-name: leftmovement;
+            animation-duration:5s;
+            animation-iteration-count: 100;
+            animation-delay:2s;
+            animation-timing-function:linear;
+            animation-direction:alternate-reverse;
+            animation-fill-mode: both;
+            animation-play-state: running;
+
+
+        }
+        @keyframes leftmovement{
+            from{
+                top: 600px;
+                left :1300px;
+            }
+            to{
+                top:600px;
+                left:0px;
+            }
+        }
+
+        .circle{
+            width:200px;
+            height:200px;
+            background-color:orangered;
+            position: relative;
+            border-radius: 50px;
+            border: 2px solid black;
+            margin: 10px;
+            top:340px;
+            bottom:675px;
+
+
+        }
+
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="box">
+            <div class="box2">
+                <div class="circle">
+
+                </div>
+
+            </div>
+
+
+        </div>
+    </div>
+
+
+
+
+</body>
+</html>
