@@ -64,10 +64,10 @@
             animation-duration:5s;
             animation-iteration-count: 100;
             animation-delay:2s;
-            animation-timing-function:linear;
-            animation-direction:alternate-reverse;
-            animation-fill-mode: both;
-            animation-play-state: running;
+            animation-timing-function:ease-in;
+            animation-direction:alternate;
+            animation-fill-mode:both;
+            animation-play-state:inherit;
 
 
         }
@@ -77,24 +77,56 @@
                 left :1300px;
             }
             to{
-                top:600px;
-                left:0px;
+                top:40%;
+                left:30%;
             }
         }
 
         .circle{
-            width:200px;
-            height:200px;
-            background-color:orangered;
+            width:100px;
+            height:100px;
+            background-color:green;
             position: relative;
             border-radius: 50px;
             border: 2px solid black;
             margin: 10px;
-            top:340px;
-            bottom:675px;
-
-
+            top: 20%;
+            left:50%;
+            animation-name: circlemovement;
+            animation-duration:5s;
+            animation-iteration-count: 100;
+            animation-delay:2s;
+            animation-timing-function: linear;
+            animation-direction: reverse;
+            animation-fill-mode: both;
+            animation-play-state:running
         }
+
+        @keyframes circlemovement{
+
+            0%{
+                top:1%;
+                left:5%;
+            }
+
+            30%{
+                top:5%;
+                left:90%;
+            }
+
+            60%{
+                top:70%;
+                left:10%;
+
+            }
+
+            100%{
+                top:75%;
+                left:90%;
+
+            }
+
+
 
 
     </style>
@@ -102,16 +134,14 @@
 <body>
     <div class="container">
         <div class="box">
-            <div class="box2">
-                <div class="circle">
-
-                </div>
+            </div>
+            <div class="circle">
 
             </div>
+            <div class="box2">
 
-
-        </div>
-    </div>
+                </div>
+            
 
 
 
