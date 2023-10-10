@@ -240,13 +240,55 @@
 
 // let num = 100;
 
-// let total = (num*(num+1))/2;
-// console.log(total);
+// // let total = (num*(num+1))/2;
+// // console.log(total);
 
+// let marks = +prompt("Enter your marks")
+// if (marks>=90){
+//     console.log("A grade")
+// }
+// else if(marks>=80){
+//     console.log("B grade")
+// }
+// else if(marks>=70){
+//     console.log("C grade")
+// }
+// else if(marks>=60){
+//     console.log("D grade")
+// }
+// else{
+//     console.log("You are looser")
+// }
 
-for (let i =0;i<=9;i ++){
-    console.log(i)
-}
-console.log("value of i is ", i)
+// let num =2
+
+// switch(num){
+//     case 1: console.log("A");
+//     break;
+//     case 2: console.log("B");
+//     break;
+//     case 3: console.log("C");
+//     break;
+//     case 4: console.log("D");
+//     break;
+//     default:
+//         console.log("Other number")
+// }
+
+// for ( let i=0; i<5; i+=1){
+//     console.log("Babbar")
+// }
+
+// let i =0
+// while (i<5){
+//     console.log(i)
+//     i++
+// }
+
+let y = 0
+do{
+    console.log(y)
+    y++
+}while(y<10)
 
 
