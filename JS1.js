@@ -81,24 +81,28 @@ console.log("Operators in JS")
 
 // let b = alert("I need your help? ")
 
-let a = prompt("What is your age");
-a = Number.parseInt(a);
-if (a<0){
-    alert("This is a invalid age");
-}
-else if(a<9) {
-    alert("You are a kid you can't think of driving");
-}
-else if(a<18 && a>=9){
-    alert("You are a adult you can think of driving after 18");
-}
-else{
-    alert("You can now drive")
-}
-console.log("Done")
+// let a = prompt("What is your age");
+// a = Number.parseInt(a);
+// if (a<0){
+//     alert("This is a invalid age");
+// }
+// else if(a<9) {
+//     alert("You are a kid you can't think of driving");
+// }
+// else if(a<18 && a>=9){
+//     alert("You are a adult you can think of driving after 18");
+// }
+// else{
+//     alert("You can now drive")
+// }
+// console.log("Done")
+
+let course = courses.find(function(course){
+    return course.naam === "Love",
+})
 
 
-
+let course = courses.findcourse => course.naam ==="love"
 
 
 

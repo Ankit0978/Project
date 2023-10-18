@@ -63,7 +63,7 @@
 // console.log(createrect3)
 
 
-// // Dynamic bature of objects
+// // Dynamic nature of objects
 
 // // Adding new properties to a Object
 
@@ -241,13 +241,14 @@
 
 // console.log(numbers[1])
 // console.log(numbers[3])
+//end
 // numbers.push(9) // push() - used to add element in the last of the array 
 // numbers.push(8)
 // console.log(numbers)
-
+//starting
 // numbers.unshift(2) // unshift() - used to add element in the starting of the array
 // console.log(numbers)
-
+//middle
 // numbers.splice(3,0,"a","b","c") // splice - used to add element in between of the array
 // console.log(numbers) 
 
@@ -273,13 +274,140 @@
 
 // Delete elements in an array
 
-let numbers = [1,2,3,44,4]
+// let numbers = [1,2,3,44,4]
+// //end
+// numbers.pop();
+// console.log(numbers)
+// //beginning
+// numbers.shift();
+// console.log(numbers)
+// //middle
+// numbers.splice(1,1)
+// console.log(numbers)
 
-numbers.pop();
-console.log(numbers)
 
-numbers.shift();
-console.log(numbers)
+// Emptying an Array[]
 
-numbers.splice(1,1)
-console.log(numbers)
+// Method1
+// let numbers = [1,2,3,4,5]
+// let numbers2 = numbers
+
+// numbers = []
+
+// console.log(numbers)
+// console.log(numbers2)
+
+//Method2 -.length()
+
+// let numbers = [1,2,3,4,5]
+// let numbers2 = numbers
+
+// // numbers.length = 0
+
+// // numbers.splice(0,numbers.length)
+// console.log(numbers)
+// console.log(numbers2)
+
+// Method3 - .splice method
+
+// let numbers = [1,2,3,4,5]
+// let numbers2 = numbers
+
+// // numbers.length = 0
+
+// numbers.splice(0,numbers.length)
+// console.log(numbers)
+// console.log(numbers2)
+
+// Combining And Slicing Arrays
+
+
+//  Combine method - Primitive data types
+// let numbers = [1,24,4,4,5]
+// let numbers2 = [1,3,4.4,4]
+// let combined = numbers.concat(numbers2)
+// console.log(combined)
+
+// Slice method - Primittive data types
+
+// let numbers = [1,24,4,4,5]
+// let numbers2= numbers.slice(2,5)
+// console.log(numbers2)
+// let numbers3 = numbers.slice(2) 
+// console.log(numbers)
+// let numbers4 = numbers.slice()  // Full slicing
+// console.log(numbers4)  
+
+
+// Spread operator - combining and making copy of an array
+
+// let numbers = [1,34,4,5]
+// let numbers2 = [3,5.556,5]
+// let numbers3 = [...numbers,"a",false,...numbers2,"b",true]
+// console.log(numbers3)
+
+// let combined = [...numbers3]
+// console.log(combined)
+
+// For-of Loop
+// let arr = [10,20,30,40,50]
+// // for(let value of arr){
+// //     console.log(value)
+// // }
+
+// // For-each loop
+
+// arr.forEach(numbers=> console.log(numbers)
+// )
+
+//Joining An array"
+
+// let numbers1 = [10,20,30,40]
+// let numbers2  = numbers1.join("+")
+// console.log(numbers2)
+
+// // Splitting an Array
+
+// let para = " This is a paragraph"
+// let para2 = para.split(" ")
+// console.log(para2)
+
+// Sorting an Array
+
+// let numbers = [30,40,20,10]
+// let num2= Number.parseInt(numbers.reverse())
+// console.log(num2)
+// console.log(typeof(num2))
+
+// Filtering an array
+
+// let numbers = [1,2,-1,-4]
+
+// let num2 = numbers.filter(value=> value<0
+// )
+// console.log(num2)
+
+// Mapping an array:
+
+// let numbers = [1,23,4,5,6]
+
+//  let items=numbers.map(value =>"student-no" + value
+// )
+// console.log(items)
+
+// Mapping with objects
+
+let numbers = [1,2,-1,-2]
+
+let filtered = numbers.filter(function(value){
+    return value<=0
+})
+console.log(filtered)
+
+let items = filtered.map(function(num){
+    return {value : num}
+})
+console.log(items)
+
+
+
