@@ -187,30 +187,57 @@
 
 // Fetch Api using POST call
  
-async function helper(){
-    let options = {
-        method: 'POST',
-        headers: {
-            'Content-type': 'application/json; charset=UTF-8',
-          },
-      body: JSON.stringify({
-        title: 'Ankit',
-        body: 'Welldone Ankit',
-        userId: 1996,
-      }),
+// async function helper(){
+//     let options = {
+//         method: 'POST',
+//         headers: {
+//             'Content-type': 'application/json; charset=UTF-8',
+//           },
+//       body: JSON.stringify({
+//         title: 'Ankit',
+//         body: 'Welldone Ankit',
+//         userId: 1996,
+//         weight: "90kg"
+        
+//       }),
       
-    };
-//xdou2qed
+//     };
 
+// let content = await fetch("https://jsonplaceholder.typicode.com/posts", options)
+// let response = await content.json();
+// return response
+// }
 
-let content = await fetch("https://json placeholder.typicode.com/posts", options)
-let response = await content.json();
-return response
+// async function utility(){
+//     let ans = await helper();
+//     console.log(ans);
+// }
+
+// console.log(utility())
+
+// Closures
+// let name = "Sher"
+// function init() {
+
+//     {
+//         let name = "Pawan"
+//     }
+//     // let name = "Mozilla"; // name is a local variable created by init
+//     function displayName() {
+//         // let name = "Babbar"
+//       // displayName() is the inner function, that forms the closure
+//       console.log(name); // use variable declared in the parent function
+//     }
+//     displayName();
+//   }
+//   init();
+
+function name (){
+    let name = "Mozilla"
+    function displayName(){
+        console.log(name)
+    }
+    displayName();
 }
-
-async function utility(){
-    let ans = await helper();
-    console.log(ans);
-}
-
-console.log(utility())
+name();
+  

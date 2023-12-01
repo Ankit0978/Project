@@ -1,0 +1,56 @@
+.main{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: dimgray;
+    overflow: hidden;
+    flex-direction: column;
+    gap: 15px;
+    
+}
+
+*{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.second{
+display: flex;
+/* gap:12px; */
+}
+
+.third{
+    font-size: 20px;
+    color: cyan;
+    line-height: 20px;
+}
+
+#abc{
+    border-right-width: 2px;
+    /* border-right: 2px; */
+border-right-color:blueviolet;
+padding: 3px;
+margin: 3px;
+border-radius: 5px;
+}
+
+#text{
+    font-weight: bold;
+    font-size:x-large;
+    padding: 5px;
+    
+}
+
+#cde{
+    border-left-width: 2px;
+    border-left-color: blueviolet;
+    padding: 3px;
+    margin: 3px;
+    border-radius: 5px;
+
+
+
+}
