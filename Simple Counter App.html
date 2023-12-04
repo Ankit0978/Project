@@ -11,9 +11,10 @@
   <body>
 <!-- wrapper -->
 <div class = "main">
-  <div class="third">Increment And Decrement</div>
+  <div  class="third">Increment And Decrement</div>
 <div class="second">
-  <button id="abc">
+  <!-- Negative button -->
+  <button onclick="decrement()" id="abc">
     <i class="fa-solid fa-minus"></i>
 
     <!-- // Flow -- First we have to store the value of Counter
@@ -21,9 +22,9 @@
     //         Then we have to store that value in the counter again -->
   </button>
 
-<span id="text">0</span>
-
-  <button id="cde">
+<span id="counter" id="text">0</span>
+ <!-- Positive Button -->
+  <button onclick="increment()" id="cde">
     <i class="fa-solid fa-plus"></i>
 
   </button>
@@ -31,10 +32,11 @@
 </div>
 </div>
 
-    <script src="Simple Counter App.js"></script>
     <script
       src="https://kit.fontawesome.com/35a992e52f.js"
       crossorigin="anonymous"
     ></script>
+    <script src="Simple Counter App.js"></script>
+
   </body>
 </html>
