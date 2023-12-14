@@ -19,20 +19,22 @@ let passwordLength = 10;
 let checkCount = 0;
 handleSlider();
 // set strength circle color to grey
+setIndicator("#ccc");
 
 // Set password length on the    II
 function handleSlider(){
     inputSlider.value = passwordLength;
     lengthDisplay.innerText = passwordLength;
-    // or kuch bhi karna chaiye?
-
+    const min = inputSlider.min;
+    const max = inputSlider.max;
+    inputSlider.style.backgroundSize = ((passwordLength-min)*100/(max-min)) + "%100%"
     // handleSlider wala function password length ko UI par update karata he.
 }
 
 //  Set color-shadow of the Indicator
 function setIndicator(color){
  indicator.style.backgroundColor = color;
- indicator.style.boxShadow = color;
+ indicator.style.boxShadow = `0px 0px 12px 1px ${color}`;
 }
 
 // To generate random Integer
@@ -124,7 +126,9 @@ function handleCheckBoxChange(){
 function shufflePassword(array){
     // Fischer Yates method
     for(let i = array.length-1; i>0 ; i--){
+        //  Random j find out using random function
         const j = Math.floor(Math.random()* (i +1));
+        // swap number at i index and j index
         const temp = array[i];
         array[i] = array[j]
         array[j] = temp;
