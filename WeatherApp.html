@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=<device-width>, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="WeatherApp.css">
+</head>
+<body>
+    <div class="wrapper">
+        <h1>Weather App</h1>
+
+        <div class="tab_container">
+            <p class="tab" data-userWeather id="abc">Your Weather</p>
+            <p class="tab" data-searchWeather id="cde">Search Weather</p>
+        </div>
+
+        <div class="weather-container">
+        <!-- grant location container -->
+        <div class="grant-location-container">
+            <img src="download.jpg" alt="Location" height="80" width="80" loading ="lazy">
+            <p> Grant Location Access</p>
+            <p>Allow Access to get weather information</p>
+            <button class="btn" data-grantAccess >Grant Access</button>
+        </div>
+
+    <!-- Search-weather-form -->
+        <form class="form-container" data-searchForm>
+            <input placeholder="Search for city ..." data-searchInput>
+            <button class="btn" type="submit">
+                <img src="images (1).png" alt="Search Image" height="10" width="10" loading="lazy">
+            </button>
+        </form>
+        
+
+        <!-- Loading screen -->
+        <div class="loading-container">
+            <img src="loading" alt="LoadingImage" height="150" width="150">
+            <p>Loading</p>
+
+        </div>
+
+        <!-- Show-Weather-Screen -->
+        <div class="user-info-container">
+            <!-- City Name and Flag -->
+             <div class="name">
+                 <p data-cityName></p>
+                 <img data-countryIcon>
+             </div>
+             <!-- Weather Description -->
+             <p data-weatherDesc></p>
+             <!-- Weather Icon Image -->
+             <img data-weatherIcon>
+             <!-- temperature -->
+             <p data-temp></p>
+
+            <div class="parameter-container">
+                <!-- Card1 -->
+                <div class="parmeter">
+                    <img src="wind.jpg" height="50" width="50">
+                    <p>WindSpeed</p>
+                    <p data-windspeed></p>
+                </div>
+
+                <!-- Card2 -->
+                <div class="parameter">
+                    <img src="humidity.png" height="50" width="50">
+                    <p>Humidity</p>
+                    <p data-humidity></p>
+
+                <!-- Card3 -->
+                    <div class="parameter">
+                        <img src="clouds.png" height="50" width="50">
+                        <p>Clouds</p>
+                        <p data-cloudiness></p>
+
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+
+        </div>
+    </div>
+    <script src="WeatherApp.js"></script>
+</body>
+</html>
